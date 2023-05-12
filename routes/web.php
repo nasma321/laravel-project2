@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 Route::get('login', 'MainController@index')->name('login');
 Route::post('/main/checklogin', 'MainController@checklogin');
